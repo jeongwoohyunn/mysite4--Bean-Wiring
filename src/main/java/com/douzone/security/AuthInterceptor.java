@@ -17,7 +17,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 		HttpServletRequest request,
 		HttpServletResponse response,
 		Object handler) throws Exception {
-		
+		System.out.println("--------------------------------------------");
 		//1. Handler 종류 확인
 		if(handler instanceof HandlerMethod == false) {
 			return true;
